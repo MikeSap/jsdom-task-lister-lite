@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     editForm.addEventListener ('submit', function(e){
       e.preventDefault()
       let editedTask = e.target['edit-task-description'].value
-      e.target.parentElement.innerHTML = `<li> <div class='todo-task'>${editedTask}</div> <button class='remove'> X </button> <button class='edit'> Edit </button> </li>`
+      e.target.parentElement.innerHTML = `<div class='todo-task'>${editedTask}</div> <button class='remove'> X </button> <button class='edit'> Edit </button>`
     })
   }
 
