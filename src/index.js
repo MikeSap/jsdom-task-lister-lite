@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     e.target.parentElement.innerHTML = `<form class="edit-todo" action="#" method="post">
     <input type="text" id="edit-task-description" name="edit-task-description" value= ${editedTask}>
     <input type="submit" value="Edit Task">
-  </form>`
+    </form>`
   let editForm = document.querySelector('.edit-todo')
     editForm.addEventListener ('submit', function(e){
       e.preventDefault()
